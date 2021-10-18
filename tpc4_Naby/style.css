@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: gainsboro;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+    
+}
+@font-face{
+    src: url(font.ttf);
+    font-family: script;
+}
+.container{
+   width: 100%;
+   margin: auto;
+   background-color: tan;
+   
+   font-family: script;
+    
+}
+
+.boxone{
+   
+    color: white;
+  
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 2px;
+    font-family: script;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover ::after{
+    width: 100%;
+}
+
+.boxtwo{
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-top: 20px;
+   width: 130px auto;
+   color: white;
+   
+   height: 25px auto;
+   
+}
+
+table{
+    width: 50% ;
+    border-collapse: collapse;
+    margin-top: 0.5cm;
+    color: white;
+    background-color: tan;
+    border-radius: 30px;
+    
+}
+
+td input{
+    padding: 4px;
+    border-radius: 5px;
+}
+td{
+    padding-left: 1.9cm;
+    padding-top: 6px;
+}
+
+.boxtres{
+    width: 200%;
+    margin-left: 1cm;
+    max-width: fit-content;
+    padding-left: 40px auto;
+    margin-top: 20px ;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    
+    
+}
+
+.total{
+
+    width: 100px;
+    height: 80px;
+    margin-left: 60%;
+    
+    
+}
+
+.btn{
+    width: 200px;
+    height: 35px;
+    background-color: tan;
+    border-radius: 20px;
+    margin-top:3px ;
+    text-transform: uppercase; 
+    text-align: center; 
+    color: white; 
+    border-color: white;
+}
+
+

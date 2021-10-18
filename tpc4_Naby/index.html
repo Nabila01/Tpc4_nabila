@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="venda.js"></script>
+</head>
+<body>
+   
+    <form action="recibo.jsp" method="POST" onsubmit="return invalidar();">
+
+    <div class="container"> 
+        <div class="boxone">
+            <h1>Glasses store</h1>
+            <div class="navbar">
+                <ul>
+                    <li> <a href="">More about us</a></li>
+                    <li><a href="">Contact us</a> </li>
+                    <li><a href="">Social Media</a> </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxtwo">
+        <h2>Butterfly</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Preço</th>
+            <th>Quatidade</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>8000<input type="hidden" value="8000" id="prod1" name="p_unit1"/> </td>
+            <td><input   name="QtdButterfly"   value= "1"  type="number"  min="0" max="10" class="n"  id="quantidade1" onchange="actualizarPreco(this,1)"/></td>
+            <td><p id="total1">8000</p></td>
+          </tr>
+
+    </table>
+    <div class="boxtres">
+        <img src="butteflyModel.jpg" height="230px" width="255px">
+        <img src="butterfly1.jpg" height="110px" width="150px" >
+        <img src="butterfly2.jpg" height="110px" width="150px" >
+
+    </div>
+
+    <div class="boxtwo">
+        <h2>Cateye</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Preço</th>
+            <th>Quatidade</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>20000<input type="hidden" value="20000" id="prod2" name="p_unit2"/> </td>
+            <td><input   name="QtdCateye"  value= "1"  type="number"  min="0" max="10" class="n"  id="quantidade2" onchange="actualizarPreco(this,2)"/></td>
+            <td> <p id="total2"  >20000</p></td>
+          </tr>
+
+    </table>
+    <div class="boxtres">
+        <img src="cateyeModel.jpg" height="260px" width="225px">
+        <img src="cateye1.jpg" height="120px" width="130px" >
+        <img src="cateye2.jpg" height="120px" width="130px" >
+    </div>
+
+    <div class="boxtwo">
+        <h2>Clubmaster</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Preço</th>
+            <th>Quatidade</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>25000<input type="hidden" value="25000" id="prod3" name="p_unit3"/> </td>
+            <td><input   name="QtdClubmaster"  value= "1"  type="number"  min="0" max="10" class="n"  id="quantidade3" onchange="actualizarPreco(this,3)"/></td>
+            <td><p id="total3">25000</p></td>
+          </tr>
+
+    </table>
+    
+    <div class="boxtres">
+        <img src="clubmasterModel.jpg" height="240px" width="225px">
+        <img src="clubmaster1.jpg" height="120px" width="130px" >
+        <img src="clubmaster2.jpg" height="120px" width="130px" >
+        
+    </div>
+    <div class="total">
+        
+        <p>Insira o nome do agente</p>
+        <input class="btn" name="nome_agente" type="text" id="nome_agente"/>
+    
+           <input  class="btn" type="button"  value= "Total das Compras" onclick="somaTotal()"/> 
+            <input class="btn" readonly="true"  value="0"type="text" id="total4" name="Valor_total"  >
+            <input  class="btn" type="submit"  value= "Comprar Itens"/> 
+            
+     
+    </div>
+    
+    
+</form> 
+</body>
+</html>
